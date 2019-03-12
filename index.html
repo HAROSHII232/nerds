@@ -209,7 +209,7 @@
 
     <!-- Modal -->
 
-    <!-- <section class="modal">
+    <section class="modal">
         <h2>Напишите нам</h2>
         <form class="modal-form" action="post" action="https://echo.htmlacademy.ru">
             <div class=" modal-form-wrap ">
@@ -229,8 +229,22 @@
             <button type="submit " class="button modal-button-send ">Отправить</button>
         </form>
         <button class="modal-close " type="button " aria-label="Закрыть форму ">Закрыть</button>
-    </section> -->
+    </section>
 
+    <script>
+        var link = document.querySelector(".modal-button");
+        var popup = document.querySelector(".modal");
+        var close = document.querySelector(".modal-close");
+
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+        });
+        close.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+    </script>
 </body>
 
 </html>

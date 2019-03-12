@@ -1053,6 +1053,7 @@ input:not(:checked):active+.checkbox-label::before {
 /* modal */
 
 .modal {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1062,7 +1063,11 @@ input:not(:checked):active+.checkbox-label::before {
     background-color: #fff;
     padding: 68px 100px 84px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+.modal-show {
+    display: block;
 }
 
 .modal h2 {
